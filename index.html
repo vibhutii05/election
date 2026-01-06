@@ -6,6 +6,7 @@
 <meta property="og:description" content="पनवेल महानगरपालिका सर्वत्रिक निवाडनुक 2025-26"/>
 <meta property="og:url" content="index.html"/>
 <meta property="og:image"content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>डमी मतदान यंत्र</title>
      <link rel="shortcut icon" type="image/x-icon" href="voting.jpg">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -122,6 +123,25 @@
         .social-icons a:hover {
             color: #0073e6;
         }
+        /* Responsive / fit-to-display rules */
+        html, body { overflow-x: hidden; -webkit-text-size-adjust: 100%; box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+        img { max-width: 100%; height: auto !important; display: block; }
+        .page { max-width: 1100px; margin: 0 auto; padding: 0 12px; }
+        .candidates-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+        .candidate-table { width: 20% !important; max-width: 480px; min-width: 260px; margin: 0; text-align: center; border-collapse: collapse; font-family: kokila; font-size: clamp(14px, 2vw, 20px); table-layout: fixed; word-wrap: break-word; }
+        .candidate-table td { word-break: break-word; padding: 7px; }
+        .candidate-table img { max-width: 60%; height: auto !important; margin: 0 auto; }
+        .button, .buttonCorrect, .buttonIntro { width: 100%; max-width: 260px; font-size: clamp(16px, 3vw, 22px); }
+        @media (max-width: 900px) {
+            .candidate-table { width: 45% !important; min-width: 220px; }
+        }
+        @media (max-width: 600px) {
+            .candidate-table { width: 100% !important; min-width: 0; font-size: clamp(16px, 4vw, 22px); }
+            .button, .buttonCorrect, .buttonIntro { width: 90% !important; font-size: clamp(18px, 6vw, 30px); }
+            .candidates-row { padding: 0 6px; }
+            div[style*="font-size:4vw"] { font-size: clamp(18px, 6vw, 28px) !important; }
+        }
     </style>
 <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&amp;display=swap" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&amp;display=swap">
@@ -150,6 +170,9 @@
             <span style="background-color:#ff0909;padding: 10px; color: #ffffff;font-weight: bold;font-size:4vw;display: inline-block;width: 60%;border-radius: 10px;">मतदानाच्या दिवशी सुद्धा  
                 कमल चिन्हा समोरील बटण दाबावे</span>  <img id="wimage" src="Whatsapp.jpg" style="width:30%;/* vertical-align:middle; */padding-left:20px;padding-top: 1vw;vertical-align: top;">
                 <img id="simage">
+                <div style="text-align:center;font-family: kokila; font-size:2vw; margin-top:30px;font-weight: bold;">
+                    जयकुमार दिगोले <br><a href="tel:9821013155" style="color: #000000;">9821013155</a>
+                  </div>
 				<br>
                 <br>
 				<!-- <a href="https://www.facebook.com/shashikantshindeofficialpage/" target="_blank"><i style="background: floralwhite;border-radius: 5px;width: 115px;height: 100px;font-size: 100px;" class="fab fa-facebook-f"></i></a>
@@ -157,8 +180,8 @@
                  -->
                 </div><br>
             </div>
-            <div style="display: flex; justify-content: center; flex-wrap: nowrap;">
-    <table style="margin:0 auto; width:20%; text-align:center; border-collapse: collapse; font-family: kokila; font-size:2vw">
+                <div class="candidates-row">
+            <table class="candidate-table" style="margin:0 auto; width:20%; text-align:center; border-collapse: collapse; font-family: kokila; font-size:2vw">
         <tbody><tr>
             <td style="border:2px solid #000000; padding:7px; ">
                 अ.क्र
@@ -336,7 +359,7 @@
                     </tbody></table>
 
 
-                    <table style="margin:0 auto; width:20%; text-align:center; border-collapse: collapse; font-family: kokila; font-size:2vw">
+                    <table class="candidate-table" style="margin:0 auto; width:20%; text-align:center; border-collapse: collapse; font-family: kokila; font-size:2vw">
         <tbody><tr>
             <td style="border:2px solid #000000; padding:7px; ">
                 अ.क्र
