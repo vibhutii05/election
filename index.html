@@ -1027,7 +1027,7 @@
 
             var fakeLink = document.createElement('a');
             //fakeLink.setAttribute('href', 'whatsapp://send?text=' + encodeURIComponent(imageURL));
-            fakeLink.setAttribute('href', 'https://api.whatsapp.com:/send?text=' + encodeURIComponent(window.location.href) + '%0D%0A शशिकांत जयवंत शिंदे, तुम्ही केले का?');
+            fakeLink.setAttribute('href', 'https://api.whatsapp.com:/send?text=' + encodeURIComponent(window.location.href));
             fakeLink.setAttribute('data-action', 'share/whatsapp/share');
             fakeLink.click();
             image.src = "";
